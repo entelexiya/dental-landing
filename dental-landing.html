@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Стоматология — запись через WhatsApp</title>
+<meta name="description" content="Современная стоматологическая клиника. Рассрочка Kaspi 0-0-24. Запись в WhatsApp.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Цвета управляются из CONFIG.colors через JS (см. applyConfig) */
+  :root{
+    --color-primary:#0E8C7F;
+    --color-primary-dark:#0A6B60;
+    --color-primary-soft:#E7F4F2;
+    --color-accent:#C79A3A;
+    --color-ink:#12211F;
+    --color-muted:#5B6B69;
+    --color-bg:#FBFCFC;
+    --color-wa:#25D366;
+    --color-kaspi:#F14635;
+  }
+  html{scroll-behavior:smooth;}
+  body{font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;background:var(--color-bg);color:var(--color-ink);-webkit-font-smoothing:antialiased;text-wrap:pretty;}
+  a{color:inherit;}
+  .ph{background-image:repeating-linear-gradient(45deg,rgba(14,140,127,.06) 0,rgba(14,140,127,.06) 10px,rgba(14,140,127,.02) 10px,rgba(14,140,127,.02) 20px);}
+  .ph-label{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ============ ШАПКА ============ -->
+<header class="sticky top-0 z-40 backdrop-blur bg-[var(--color-bg)]/85 border-b border-black/5">
+  <div class="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between">
+    <a href="#hero" class="flex items-center gap-2 font-extrabold tracking-tight text-lg">
+      <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg text-white" style="background:var(--color-primary)">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5c-2-2-5-2-6.5 0C4 7 4 10 5 13c.7 2 1.2 5 2 5s1-2 1.5-4 1.5-2 3.5-2 3 0 3.5 2 .7 4 1.5 4 1.3-3 2-5c1-3 1-6-.5-7.5-1.5-2-4.5-2-6.5 0Z"/></svg>
+      </span>
+      <span data-cfg="clinic.short"></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-[var(--color-muted)]">
+      <a href="#services" class="hover:text-[var(--color-primary)] transition">Услуги</a>
+      <a href="#doctors" class="hover:text-[var(--color-primary)] transition">Врачи</a>
+      <a href="#kaspi" class="hover:text-[var(--color-primary)] transition">Рассрочка</a>
+      <a href="#reviews" class="hover:text-[var(--color-primary)] transition">Отзывы</a>
+      <a href="#contacts" class="hover:text-[var(--color-primary)] transition">Контакты</a>
+    </nav>
+    <a data-cfg-href="waLink" href="#" class="hidden sm:inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:brightness-95" style="background:var(--color-wa)">
+      <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.6-.1 1.1Z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="relative overflow-hidden">
+  <div class="absolute inset-0 -z-10" style="background:linear-gradient(180deg,var(--color-primary-soft),transparent 60%)"></div>
+  <div class="mx-auto max-w-6xl px-5 pt-12 pb-14 md:pt-20 md:pb-24 grid md:grid-cols-2 gap-10 items-center">
+    <div class="reveal">
+      <span class="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-[var(--color-primary)] ring-1 ring-[var(--color-primary)]/15">
+        <span class="h-1.5 w-1.5 rounded-full" style="background:var(--color-primary)"></span>
+        <span data-cfg="clinic.badge"></span>
+      </span>
+      <h1 class="mt-5 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight">
+        <span data-cfg="clinic.name"></span>
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-[var(--color-muted)] max-w-xl" data-cfg="clinic.offer"></p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a data-cfg-href="waLink" href="#" class="inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-600/20 transition hover:brightness-95" style="background:var(--color-wa)">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.6-.1 1.1Z"/></svg>
+          Записаться в WhatsApp
+        </a>
+        <a data-cfg-href="telLink" href="#" class="inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-semibold ring-1 ring-black/10 bg-white text-[var(--color-ink)] transition hover:ring-[var(--color-primary)]/40">
+          <span data-cfg="contacts.phone"></span>
+        </a>
+      </div>
+      <div class="mt-8 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm text-[var(--color-muted)]">
+        <div class="flex items-center gap-2"><svg viewBox="0 0 24 24" class="h-5 w-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg><span data-cfg="hero.trust1"></span></div>
+        <div class="flex items-center gap-2"><svg viewBox="0 0 24 24" class="h-5 w-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg><span data-cfg="hero.trust2"></span></div>
+        <div class="flex items-center gap-2"><svg viewBox="0 0 24 24" class="h-5 w-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 13 4 4L19 7"/></svg><span data-cfg="hero.trust3"></span></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="ph rounded-3xl ring-1 ring-black/5 aspect-[4/5] md:aspect-[4/4.4] flex items-center justify-center relative">
+        <span class="ph-label text-xs text-[var(--color-muted)] px-4 text-center">фото клиники / врача<br>1200×1500</span>
+        <div class="absolute -bottom-5 left-5 right-5 md:left-6 md:right-6 rounded-2xl bg-white shadow-xl ring-1 ring-black/5 p-4 flex items-center gap-4">
+          <div class="text-3xl font-extrabold" style="color:var(--color-primary)" data-cfg="hero.statValue"></div>
+          <div class="text-sm text-[var(--color-muted)] leading-snug" data-cfg="hero.statLabel"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ УСЛУГИ ============ -->
+<section id="services" class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+  <div class="max-w-2xl reveal">
+    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Услуги</h2>
+    <p class="mt-3 text-[var(--color-muted)]" data-cfg="services.subtitle"></p>
+  </div>
+  <div id="services-grid" class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+</section>
+
+<!-- ============ ПОЧЕМУ МЫ / ВРАЧИ ============ -->
+<section id="doctors" class="bg-white border-y border-black/5">
+  <div class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+      <div class="reveal">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight" data-cfg="why.title"></h2>
+        <p class="mt-3 text-[var(--color-muted)]" data-cfg="why.subtitle"></p>
+        <div id="why-grid" class="mt-8 grid sm:grid-cols-2 gap-x-6 gap-y-7"></div>
+      </div>
+      <div id="doctors-grid" class="grid sm:grid-cols-2 gap-5"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ РАССРОЧКА KASPI ============ -->
+<section id="kaspi" class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+  <div class="relative overflow-hidden rounded-3xl px-6 py-12 md:px-14 md:py-16 text-white" style="background:linear-gradient(135deg,var(--color-kaspi),#c9301f)">
+    <div class="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-white/10"></div>
+    <div class="absolute -right-4 bottom-0 h-40 w-40 rounded-full bg-black/10"></div>
+    <div class="relative grid md:grid-cols-2 gap-10 items-center">
+      <div class="reveal">
+        <span class="inline-flex items-center rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider">Kaspi Red</span>
+        <h2 class="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight" data-cfg="kaspi.title"></h2>
+        <p class="mt-3 text-white/90 max-w-md" data-cfg="kaspi.text"></p>
+        <ul id="kaspi-list" class="mt-6 space-y-2.5"></ul>
+        <a data-cfg-href="waLink" href="#" class="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-4 text-base font-bold text-[var(--color-kaspi)] shadow-lg transition hover:bg-white/90">
+          Оформить рассрочку
+        </a>
+      </div>
+      <div class="reveal">
+        <div class="rounded-3xl bg-white/10 backdrop-blur ring-1 ring-white/20 p-8 text-center">
+          <div class="text-sm uppercase tracking-widest text-white/70">Рассрочка</div>
+          <div class="mt-2 text-6xl md:text-7xl font-extrabold" data-cfg="kaspi.formula"></div>
+          <div class="mt-2 text-white/80" data-cfg="kaspi.formulaHint"></div>
+          <div class="mt-6 border-t border-white/20 pt-6 flex items-center justify-center gap-8 text-left">
+            <div>
+              <div class="text-2xl font-extrabold" data-cfg="kaspi.exampleMonthly"></div>
+              <div class="text-xs text-white/70">в месяц</div>
+            </div>
+            <div>
+              <div class="text-2xl font-extrabold" data-cfg="kaspi.exampleTotal"></div>
+              <div class="text-xs text-white/70">пример лечения</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ОТЗЫВЫ ============ -->
+<section id="reviews" class="bg-white border-y border-black/5">
+  <div class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+    <div class="max-w-2xl reveal">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Отзывы пациентов</h2>
+      <p class="mt-3 text-[var(--color-muted)]" data-cfg="reviews.subtitle"></p>
+    </div>
+    <div id="reviews-grid" class="mt-10 grid gap-5 md:grid-cols-3"></div>
+  </div>
+</section>
+
+<!-- ============ КОНТАКТЫ ============ -->
+<section id="contacts" class="mx-auto max-w-6xl px-5 py-16 md:py-24">
+  <div class="grid lg:grid-cols-2 gap-10">
+    <div class="reveal">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Контакты</h2>
+      <p class="mt-3 text-[var(--color-muted)]">Приходите или напишите нам — ответим быстро.</p>
+      <dl class="mt-8 space-y-5">
+        <div class="flex gap-4">
+          <span class="mt-0.5 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style="background:var(--color-primary-soft);color:var(--color-primary)"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 1 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><dt class="text-sm text-[var(--color-muted)]">Адрес</dt><dd class="font-semibold" data-cfg="contacts.address"></dd></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="mt-0.5 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style="background:var(--color-primary-soft);color:var(--color-primary)"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><dt class="text-sm text-[var(--color-muted)]">Часы работы</dt><dd class="font-semibold" data-cfg="contacts.hours"></dd></div>
+        </div>
+        <div class="flex gap-4">
+          <span class="mt-0.5 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style="background:var(--color-primary-soft);color:var(--color-primary)"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg></span>
+          <div><dt class="text-sm text-[var(--color-muted)]">Телефон</dt><dd class="font-semibold"><a data-cfg-href="telLink" data-cfg="contacts.phone" href="#" class="hover:text-[var(--color-primary)]"></a></dd></div>
+        </div>
+      </dl>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a data-cfg-href="waLink" href="#" class="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold text-white transition hover:brightness-95" style="background:var(--color-wa)">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.6-.1 1.1Z"/></svg>
+          Написать в WhatsApp
+        </a>
+        <a data-cfg-href="telLink" href="#" class="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold ring-1 ring-black/10 bg-white transition hover:ring-[var(--color-primary)]/40">Позвонить</a>
+      </div>
+    </div>
+    <div class="reveal">
+      <div id="map-wrap" class="rounded-3xl overflow-hidden ring-1 ring-black/5 h-72 lg:h-full min-h-[300px] ph flex items-center justify-center">
+        <span class="ph-label text-xs text-[var(--color-muted)] text-center px-4">карта — вставьте iframe<br>Яндекс/2ГИС/Google Maps</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ФУТЕР ============ -->
+<footer class="border-t border-black/5">
+  <div class="mx-auto max-w-6xl px-5 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[var(--color-muted)]">
+    <div class="font-semibold text-[var(--color-ink)]" data-cfg="clinic.name"></div>
+    <div data-cfg="footer.note"></div>
+  </div>
+</footer>
+
+<!-- ============ STICKY WHATSAPP (мобильный) ============ -->
+<a data-cfg-href="waLink" href="#" id="sticky-wa" class="md:hidden fixed bottom-4 left-4 right-4 z-50 inline-flex items-center justify-center gap-2 rounded-full px-6 py-4 text-base font-bold text-white shadow-2xl shadow-emerald-900/30 transition active:scale-[.98]" style="background:var(--color-wa)">
+  <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.6-.1 1.1Z"/></svg>
+  Записаться в WhatsApp
+</a>
+<div class="md:hidden h-24" aria-hidden="true"></div>
+
+<script>
+/* ============================================================
+   CONFIG — единственное место для персонализации под клиента.
+   Меняйте только значения здесь. Остальной код трогать не нужно.
+   ============================================================ */
+const CONFIG = {
+  clinic: {
+    name: "Стоматология «Дентал Про»",
+    short: "Дентал Про",
+    badge: "Работаем с 2012 года",
+    offer: "Лечим без боли и переплат. Первичная консультация и снимок — бесплатно. Запись за 30 секунд в WhatsApp.",
+  },
+
+  // Цвета клиники. Завязаны на CSS custom properties.
+  colors: {
+    primary:     "#0E8C7F",  // основной (кнопки, акценты)
+    primaryDark: "#0A6B60",  // тёмный оттенок
+    primarySoft: "#E7F4F2",  // светлая подложка
+    accent:      "#C79A3A",  // дополнительный акцент
+    ink:         "#12211F",  // основной текст
+    muted:       "#5B6B69",  // приглушённый текст
+    bg:          "#FBFCFC",  // фон страницы
+    whatsapp:    "#25D366",  // фирменный WhatsApp
+    kaspi:       "#F14635",  // фирменный Kaspi
+  },
+
+  contacts: {
+    phone:    "+7 (700) 123-45-67",
+    // Номер для WhatsApp — только цифры, в международном формате, без + и пробелов
+    whatsapp: "77001234567",
+    // Заготовленный текст сообщения (подставится автоматически)
+    whatsappText: "Здравствуйте! Хочу записаться на приём.",
+    address:  "г. Алматы, ул. Абая 150, 2 этаж",
+    hours:    "Пн–Сб: 9:00–20:00 · Вс: выходной",
+  },
+
+  hero: {
+    trust1: "Без боли",
+    trust2: "Гарантия на работы",
+    trust3: "Рассрочка Kaspi",
+    statValue: "12 000+",
+    statLabel: "довольных пациентов за 12 лет работы",
+  },
+
+  services: {
+    subtitle: "Полный спектр стоматологических услуг для всей семьи. Цены указаны «от».",
+    items: [
+      { icon: "tooth",    title: "Лечение кариеса",      desc: "Современные пломбы, лечение под микроскопом.", price: "от 12 000 ₸" },
+      { icon: "sparkle",  title: "Профгигиена",          desc: "Чистка Air Flow и ультразвук, полировка.",     price: "от 15 000 ₸" },
+      { icon: "implant",  title: "Имплантация",          desc: "Импланты премиум-класса с гарантией.",         price: "от 180 000 ₸" },
+      { icon: "brace",    title: "Ортодонтия",           desc: "Брекеты и элайнеры для ровной улыбки.",        price: "от 250 000 ₸" },
+      { icon: "crown",    title: "Протезирование",       desc: "Коронки, виниры, съёмные протезы.",            price: "от 60 000 ₸" },
+      { icon: "kids",     title: "Детская стоматология", desc: "Бережный подход к маленьким пациентам.",       price: "от 8 000 ₸" },
+    ],
+  },
+
+  why: {
+    title: "Почему выбирают нас",
+    subtitle: "Мы делаем стоматологию понятной, честной и комфортной.",
+    items: [
+      { title: "Честные цены",        desc: "Фиксируем стоимость в плане лечения — без доплат по ходу." },
+      { title: "Стерильность",        desc: "Одноразовые инструменты и контроль стерилизации." },
+      { title: "Опытные врачи",       desc: "Стаж от 8 лет, регулярное повышение квалификации." },
+      { title: "Гарантия",            desc: "Официальная гарантия на лечение и протезирование." },
+    ],
+    doctors: [
+      { name: "Аружан Смагулова", role: "Врач-терапевт, стаж 12 лет" },
+      { name: "Данияр Ахметов",   role: "Хирург-имплантолог, стаж 15 лет" },
+    ],
+  },
+
+  kaspi: {
+    title: "Рассрочка через Kaspi 0-0-24",
+    text: "Начните лечение сегодня, а платите равными частями. Без первоначального взноса и переплат — оформление прямо в клинике за пару минут.",
+    formula: "0-0-24",
+    formulaHint: "0 переплата · 0 взнос · до 24 месяцев",
+    exampleMonthly: "7 500 ₸",
+    exampleTotal:   "180 000 ₸",
+    benefits: [
+      "Без первоначального взноса",
+      "Без переплаты и скрытых комиссий",
+      "Одобрение за несколько минут",
+      "Оформление в клинике по удостоверению",
+    ],
+  },
+
+  reviews: {
+    subtitle: "Реальные истории наших пациентов.",
+    items: [
+      { name: "Мария К.",   text: "Лечила зубы всей семьёй. Не больно, всё объяснили заранее и уложились в озвученную сумму. Рекомендую!", stars: 5 },
+      { name: "Ерлан Т.",   text: "Поставил имплант, оформили рассрочку Kaspi прямо на месте. Очень удобно, врач — профессионал.", stars: 5 },
+      { name: "Динара А.",  text: "Наконец нашла клинику, куда не страшно идти. Чисто, аккуратно и по-человечески относятся.", stars: 5 },
+    ],
+  },
+
+  footer: {
+    note: "© 2026 · Все права защищены. Лицензия №00-000000",
+  },
+};
+
+/* ============================================================
+   Ниже — движок рендера. Обычно менять не нужно.
+   ============================================================ */
+
+// SVG-иконки для услуг
+const ICONS = {
+  tooth:   '<path d="M12 5.5c-2-2-5-2-6.5 0C4 7 4 10 5 13c.7 2 1.2 5 2 5s1-2 1.5-4 1.5-2 3.5-2 3 0 3.5 2 .7 4 1.5 4 1.3-3 2-5c1-3 1-6-.5-7.5-1.5-2-4.5-2-6.5 0Z"/>',
+  sparkle: '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M18 6l-2.5 2.5M6 18l2.5-2.5M18 18l-2.5-2.5"/>',
+  implant: '<path d="M12 3v18M8 7h8M9 11h6M10 15h4"/>',
+  brace:   '<rect x="4" y="9" width="16" height="6" rx="2"/><path d="M8 9v6M12 9v6M16 9v6"/>',
+  crown:   '<path d="M4 17h16l1-9-5 4-4-6-4 6-5-4 1 9Z"/>',
+  kids:    '<circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M8.5 14a4 4 0 0 0 7 0"/>',
+};
+
+function get(obj, path){
+  return path.split('.').reduce((o,k)=> (o==null?undefined:o[k]), obj);
+}
+
+function applyConfig(){
+  // 1. CSS-переменные из CONFIG.colors
+  const c = CONFIG.colors, root = document.documentElement.style;
+  root.setProperty('--color-primary', c.primary);
+  root.setProperty('--color-primary-dark', c.primaryDark);
+  root.setProperty('--color-primary-soft', c.primarySoft);
+  root.setProperty('--color-accent', c.accent);
+  root.setProperty('--color-ink', c.ink);
+  root.setProperty('--color-muted', c.muted);
+  root.setProperty('--color-bg', c.bg);
+  root.setProperty('--color-wa', c.whatsapp);
+  root.setProperty('--color-kaspi', c.kaspi);
+
+  // 2. Ссылки WhatsApp / телефон
+  const waLink  = 'https://wa.me/' + CONFIG.contacts.whatsapp + '?text=' + encodeURIComponent(CONFIG.contacts.whatsappText);
+  const telLink = 'tel:+' + CONFIG.contacts.phone.replace(/[^\d]/g,'');
+  const links = { waLink, telLink };
+  document.querySelectorAll('[data-cfg-href]').forEach(el=>{
+    el.setAttribute('href', links[el.getAttribute('data-cfg-href')]);
+  });
+
+  // 3. Текстовые плейсхолдеры data-cfg="path.to.value"
+  document.querySelectorAll('[data-cfg]').forEach(el=>{
+    const v = get(CONFIG, el.getAttribute('data-cfg'));
+    if(v != null) el.textContent = v;
+  });
+
+  document.title = CONFIG.clinic.name;
+}
+
+function renderServices(){
+  const grid = document.getElementById('services-grid');
+  grid.innerHTML = CONFIG.services.items.map(s=>`
+    <article class="reveal group rounded-2xl bg-white ring-1 ring-black/5 p-6 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-black/5">
+      <div class="inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background:var(--color-primary-soft);color:var(--color-primary)">
+        <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICONS[s.icon]||ICONS.tooth}</svg>
+      </div>
+      <h3 class="mt-5 text-lg font-bold">${s.title}</h3>
+      <p class="mt-2 text-sm text-[var(--color-muted)]">${s.desc}</p>
+      <div class="mt-5 flex items-center justify-between">
+        <span class="font-extrabold" style="color:var(--color-primary)">${s.price}</span>
+        <span class="text-xs text-[var(--color-muted)] opacity-0 group-hover:opacity-100 transition">Записаться →</span>
+      </div>
+    </article>`).join('');
+}
+
+function renderWhy(){
+  const grid = document.getElementById('why-grid');
+  grid.innerHTML = CONFIG.why.items.map(w=>`
+    <div class="reveal flex gap-3">
+      <span class="mt-1 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg" style="background:var(--color-primary-soft);color:var(--color-primary)">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m5 13 4 4L19 7"/></svg>
+      </span>
+      <div><h4 class="font-bold">${w.title}</h4><p class="mt-1 text-sm text-[var(--color-muted)]">${w.desc}</p></div>
+    </div>`).join('');
+
+  const docs = document.getElementById('doctors-grid');
+  docs.innerHTML = CONFIG.why.doctors.map(d=>`
+    <article class="reveal rounded-2xl overflow-hidden ring-1 ring-black/5 bg-[var(--color-bg)]">
+      <div class="ph aspect-[4/5] flex items-center justify-center">
+        <span class="ph-label text-[11px] text-[var(--color-muted)] text-center px-3">фото врача<br>800×1000</span>
+      </div>
+      <div class="p-4"><h4 class="font-bold leading-tight">${d.name}</h4><p class="mt-1 text-sm text-[var(--color-muted)]">${d.role}</p></div>
+    </article>`).join('');
+}
+
+function renderKaspi(){
+  const list = document.getElementById('kaspi-list');
+  list.innerHTML = CONFIG.kaspi.benefits.map(b=>`
+    <li class="flex items-center gap-3 text-white/95">
+      <svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>
+      <span>${b}</span>
+    </li>`).join('');
+}
+
+function renderReviews(){
+  const grid = document.getElementById('reviews-grid');
+  const star = '<svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" style="color:var(--color-accent)"><path d="m12 2 2.9 6.3 6.9.6-5.2 4.6 1.6 6.7L12 17.3 5.8 20.8l1.6-6.7L2.2 8.9l6.9-.6L12 2Z"/></svg>';
+  grid.innerHTML = CONFIG.reviews.items.map(r=>`
+    <article class="reveal rounded-2xl bg-[var(--color-bg)] ring-1 ring-black/5 p-6 flex flex-col">
+      <div class="flex gap-0.5">${star.repeat(r.stars)}</div>
+      <p class="mt-4 text-[var(--color-ink)] leading-relaxed grow">“${r.text}”</p>
+      <div class="mt-5 flex items-center gap-3">
+        <span class="inline-flex h-10 w-10 items-center justify-center rounded-full font-bold text-white" style="background:var(--color-primary)">${r.name.trim().charAt(0)}</span>
+        <span class="font-semibold">${r.name}</span>
+      </div>
+    </article>`).join('');
+}
+
+// Появление секций при скролле
+function initReveal(){
+  const els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(e=>e.classList.add('in')); return; }
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(e=>io.observe(e));
+}
+
+// Инициализация
+document.addEventListener('DOMContentLoaded', ()=>{
+  renderServices();
+  renderWhy();
+  renderKaspi();
+  renderReviews();
+  applyConfig();   // после рендера, чтобы data-cfg-href в карточках тоже обработались
+  initReveal();
+});
+</script>
+</body>
+</html>
